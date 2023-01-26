@@ -1,0 +1,528 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Scores",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 181970008012910
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 688222674691299
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "coins",
+					"sid": 204167643018979,
+					"parameters": {
+						"text": "Scores"
+					}
+				}
+			],
+			"sid": 804093298759156
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "health",
+					"sid": 166886326207578,
+					"parameters": {
+						"object": "mash"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "rabbit",
+					"sid": 242448533410449,
+					"parameters": {
+						"x": "32",
+						"y": "163"
+					}
+				}
+			],
+			"sid": 326848166006838
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "health",
+					"sid": 946251371664812,
+					"parameters": {
+						"object": "death_1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "rabbit",
+					"sid": 164589612194680,
+					"parameters": {
+						"x": "32",
+						"y": "163"
+					}
+				}
+			],
+			"sid": 697821903386592
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "animation",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 802956263756542,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "rabbit",
+							"sid": 100416583901840,
+							"parameters": {
+								"animation": "\"walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "rabbit",
+							"sid": 776974741346176,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 518519379222551,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 977844145366242,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "rabbit",
+							"sid": 683524373437543,
+							"parameters": {
+								"animation": "\"walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "rabbit",
+							"sid": 763076669667638,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 431296393233417
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 170460853434184,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "rabbit",
+							"sid": 548094800026752,
+							"parameters": {
+								"animation": "\"jump\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 599702316969612
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-any-animation-finished",
+							"objectClass": "rabbit",
+							"sid": 731974381027681
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "rabbit",
+							"sid": 892282596052402,
+							"parameters": {
+								"animation": "\"stay\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 641611714822838
+				}
+			],
+			"sid": 788329766026265
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 550874179797769
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "hit",
+					"sid": 766035127426938,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "rabbit",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "health",
+					"sid": 584203384447054,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "rabbit",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 473641277238928
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 887607841639963
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "mashroom1",
+					"sid": 368108146684101,
+					"behaviorType": "MoveTo2",
+					"parameters": {
+						"object": "rightB",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "mashroom1",
+					"sid": 482941493951764,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 129815020141817
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "mashroom1",
+					"sid": 160083511972419,
+					"parameters": {
+						"object": "rightB"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "mashroom1",
+					"sid": 982902794319632,
+					"behaviorType": "MoveTo2",
+					"parameters": {
+						"object": "leftB",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "mashroom1",
+					"sid": 672363322624032,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 493215546094677
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "mashroom1",
+					"sid": 998816589387752,
+					"parameters": {
+						"object": "leftB"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "mashroom1",
+					"sid": 623874326030975,
+					"behaviorType": "MoveTo2",
+					"parameters": {
+						"object": "rightB",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "mashroom1",
+					"sid": 599016194379366,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 108193332691545
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 780577682385919
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "Sprite",
+					"sid": 465646888217278,
+					"behaviorType": "MoveTo2",
+					"parameters": {
+						"object": "right_A",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite",
+					"sid": 566584578342674,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 726865522820315
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite",
+					"sid": 984666028398141,
+					"parameters": {
+						"object": "right_A"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "Sprite",
+					"sid": 586525471897456,
+					"behaviorType": "MoveTo2",
+					"parameters": {
+						"object": "leftA",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite",
+					"sid": 748781509959086,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 108024017123734
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite",
+					"sid": 230579015891311,
+					"parameters": {
+						"object": "leftA"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "Sprite",
+					"sid": 101718072607698,
+					"behaviorType": "MoveTo2",
+					"parameters": {
+						"object": "right_A",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite",
+					"sid": 811856763916139,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 254390336130943
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "mash",
+					"sid": 321196890336428,
+					"parameters": {
+						"object": "hit"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "mash",
+					"sid": 344754175851376,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "0.5"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 923466102728184,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "mash",
+					"sid": 570028731566602
+				}
+			],
+			"sid": 560624713757056
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "health",
+					"sid": 297432490432922,
+					"parameters": {
+						"object": "coin"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 616263835376060,
+					"parameters": {
+						"variable": "Scores",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "coin",
+					"sid": 624661611384083
+				}
+			],
+			"sid": 362266013151274
+		}
+	],
+	"sid": 403148187137556
+}

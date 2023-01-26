@@ -1,0 +1,57 @@
+{
+	"name": "platForm",
+	"plugin-id": "Sprite",
+	"sid": 654498697667776,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1685,
+						"height": 436,
+						"originX": 0.5537091988130564,
+						"originY": 0.8646788990825688,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2129366,
+						"collisionPoly": {
+							"points": [
+								0.24925816023738873,
+								0.26146788990825687,
+								0.5537091988130564,
+								0.12385321100917432,
+								0.9014836795252227,
+								0.09174311926605505,
+								0.9471810089020771,
+								0.8646788990825688,
+								0.7080118694362018,
+								0.8876146788990825,
+								0.5537091988130564,
+								0.9128440366972475,
+								0.3851632047477745,
+								0.9403669724770642,
+								0.04629080118694362,
+								0.8646788990825688
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 619535304662620,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

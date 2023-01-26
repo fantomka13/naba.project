@@ -1,0 +1,57 @@
+{
+	"name": "mashroom1",
+	"plugin-id": "Sprite",
+	"sid": 406603989184595,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 500,
+						"height": 500,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 537394,
+						"collisionPoly": {
+							"points": [
+								0.19200012207031253,
+								0.384000015258789,
+								0.5399999999999999,
+								0.34800006103515635,
+								0.8480001220703126,
+								0.32200000000000006,
+								0.86,
+								0.5,
+								0.805999755859375,
+								1,
+								0.5,
+								0.98,
+								0.26600000000000035,
+								1,
+								0.12799975585937504,
+								0.5719999694824219
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 259960370530088,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

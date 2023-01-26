@@ -1,0 +1,28 @@
+{
+	"name": "mash",
+	"plugin-id": "Sprite",
+	"sid": 116359411611564,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo2",
+			"sid": 175879916390729
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 815347576068166
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 729901688789539
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"mashroom1",
+		"Sprite"
+	]
+}
